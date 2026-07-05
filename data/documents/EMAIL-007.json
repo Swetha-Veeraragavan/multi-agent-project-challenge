@@ -1,0 +1,10 @@
+{
+  "doc_id": "EMAIL-007",
+  "doc_type_true": "service_email",
+  "text": "From: ops.manager@odessa.client.com\nSubject: URGENT: Need help - schedule an inspection\n\nHi team,\n\nWe need someone to schedule an inspection at Plant 4 - Odessa as soon as possible. This has been flagged\nmultiple times this week and is starting to affect production.\nPlease advise on timing and next steps.\n\nThanks,\nPlant Ops",
+  "ground_truth": {
+    "facility": "Plant 4 - Odessa",
+    "urgency": "urgent",
+    "requested_action": "schedule an inspection"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-006",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #006\nFacility: Plant 7 - Baton Rouge\nAsset: Feed Pump FP-08\nSeverity: MEDIUM\n\nDESCRIPTION\nOn the shift of record, operators observed oil leakage at the shaft seal\non the Feed Pump FP-08. The unit was taken offline for inspection. Estimated downtime: 21.3 hours.\n\nROOT CAUSE\nRoot cause was determined to be bearing wear beyond tolerance.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Feed Pump FP-08",
+    "facility": "Plant 7 - Baton Rouge",
+    "severity": "medium",
+    "downtime_hours": 21.3,
+    "root_cause_identified": true
+  }
+}

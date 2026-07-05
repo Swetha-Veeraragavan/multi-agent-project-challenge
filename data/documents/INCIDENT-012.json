@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-012",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #012\nFacility: Plant 2 - Gary\nAsset: Feed Pump FP-08\nSeverity: CRITICAL\n\nDESCRIPTION\nOn the shift of record, operators observed a sharp rise in vibration amplitude\non the Feed Pump FP-08. The unit was taken offline for inspection. Estimated downtime: 6.6 hours.\n\nROOT CAUSE\nRoot cause was determined to be seal degradation from age.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Feed Pump FP-08",
+    "facility": "Plant 2 - Gary",
+    "severity": "critical",
+    "downtime_hours": 6.6,
+    "root_cause_identified": true
+  }
+}

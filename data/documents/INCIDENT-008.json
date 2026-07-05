@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-008",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #008\nFacility: Plant 2 - Gary\nAsset: Gas Turbine GT-114\nSeverity: HIGH\n\nDESCRIPTION\nOn the shift of record, operators observed oil leakage at the shaft seal\non the Gas Turbine GT-114. The unit was taken offline for inspection. Estimated downtime: 13.9 hours.\n\nROOT CAUSE\nRoot cause investigation is still open pending vendor teardown report.\n\nCORRECTIVE ACTION\nInterim monitoring increased; formal RCA to follow within 10 business days.",
+  "ground_truth": {
+    "asset": "Gas Turbine GT-114",
+    "facility": "Plant 2 - Gary",
+    "severity": "high",
+    "downtime_hours": 13.9,
+    "root_cause_identified": false
+  }
+}

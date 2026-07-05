@@ -1,0 +1,13 @@
+{
+  "doc_id": "CONTRACT-010",
+  "doc_type_true": "vendor_contract",
+  "text": "SERVICE AND MAINTENANCE AGREEMENT\n\nThis Agreement is entered into as of 2025-03-15 between Meridian Industrial Operations\n(\"Client\") and Aravalle Field Ops (\"Vendor\").\n\n1. SCOPE OF SERVICES\nVendor shall provide preventive and corrective maintenance services for rotating equipment\nat Client's designated facilities, including quarterly inspections and 24-hour emergency\ncall-out support.\n\n2. TERM\nThis Agreement shall remain in effect for 2 year(s) from the Effective Date.\nThis Agreement shall automatically renew for successive one-year terms unless either party provides written notice of non-renewal.\nEither party may terminate this Agreement with 60 days' written notice.\n\n3. LIMITATION OF LIABILITY\nThis Agreement does not specify a cap on Vendor's aggregate liability.\n\n4. PRICING\nClient shall pay Vendor a fixed quarterly fee plus time-and-materials for emergency\ncall-outs, invoiced net-30.\n\n5. GOVERNING LAW\nThis Agreement is governed by the laws of the state in which the Client facility is located.",
+  "ground_truth": {
+    "counterparty": "Aravalle Field Ops",
+    "effective_date": "2025-03-15",
+    "liability_cap_usd": null,
+    "auto_renewal": true,
+    "termination_notice_days": 60,
+    "term_years": 2
+  }
+}

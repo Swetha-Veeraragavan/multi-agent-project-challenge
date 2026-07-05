@@ -1,0 +1,11 @@
+{
+  "doc_id": "SOP-007",
+  "doc_type_true": "maintenance_sop",
+  "text": "STANDARD OPERATING PROCEDURE\nEquipment: Gas Turbine GT-114\nDocument No: SOP-007\nHazard Level: LOW\n\n1. PURPOSE\nThis procedure describes the lockout/tagout and inspection steps required before\nperforming maintenance on the Gas Turbine GT-114.\n\n2. REQUIRED PPE\nTechnicians must wear the following before beginning work: respirator, chemical gloves, face shield.\n\n3. PROCEDURE\n   Step 1: Record readings in the CMMS work order.\n   Step 2: Isolate energy source and verify zero energy state.\n   Step 3: Inspect bearing housing for abnormal vibration or heat discoloration.\n   Step 4: Isolate energy source and verify zero energy state.\n   Step 5: Record readings in the CMMS work order.\n   Step 6: Inspect bearing housing for abnormal vibration or heat discoloration.\n   Step 7: Isolate energy source and verify zero energy state.\n\n4. NOTES\nDeviations from this procedure must be logged and approved by the maintenance supervisor.",
+  "ground_truth": {
+    "equipment": "Gas Turbine GT-114",
+    "hazard_level": "low",
+    "required_ppe": "respirator, chemical gloves, face shield",
+    "step_count": 7
+  }
+}

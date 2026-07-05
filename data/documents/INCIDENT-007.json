@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-007",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #007\nFacility: Plant 7 - Baton Rouge\nAsset: Cooling Tower Fan CTF-6\nSeverity: LOW\n\nDESCRIPTION\nOn the shift of record, operators observed a sharp rise in vibration amplitude\non the Cooling Tower Fan CTF-6. The unit was taken offline for inspection. Estimated downtime: 45.1 hours.\n\nROOT CAUSE\nRoot cause investigation is still open pending vendor teardown report.\n\nCORRECTIVE ACTION\nInterim monitoring increased; formal RCA to follow within 10 business days.",
+  "ground_truth": {
+    "asset": "Cooling Tower Fan CTF-6",
+    "facility": "Plant 7 - Baton Rouge",
+    "severity": "low",
+    "downtime_hours": 45.1,
+    "root_cause_identified": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "doc_id": "SOP-009",
+  "doc_type_true": "maintenance_sop",
+  "text": "STANDARD OPERATING PROCEDURE\nEquipment: Generator GEN-3\nDocument No: SOP-009\nHazard Level: HIGH\n\n1. PURPOSE\nThis procedure describes the lockout/tagout and inspection steps required before\nperforming maintenance on the Generator GEN-3.\n\n2. REQUIRED PPE\nTechnicians must wear the following before beginning work: hard hat, hearing protection, arc-flash suit.\n\n3. PROCEDURE\n   Step 1: Torque check all fasteners to manufacturer spec.\n   Step 2: Notify shift supervisor before returning equipment to service.\n   Step 3: Torque check all fasteners to manufacturer spec.\n   Step 4: Torque check all fasteners to manufacturer spec.\n   Step 5: Test emergency stop function.\n   Step 6: Isolate energy source and verify zero energy state.\n\n4. NOTES\nDeviations from this procedure must be logged and approved by the maintenance supervisor.",
+  "ground_truth": {
+    "equipment": "Generator GEN-3",
+    "hazard_level": "high",
+    "required_ppe": "hard hat, hearing protection, arc-flash suit",
+    "step_count": 6
+  }
+}

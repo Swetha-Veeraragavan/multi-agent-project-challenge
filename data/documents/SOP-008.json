@@ -1,0 +1,11 @@
+{
+  "doc_id": "SOP-008",
+  "doc_type_true": "maintenance_sop",
+  "text": "STANDARD OPERATING PROCEDURE\nEquipment: Feed Pump FP-08\nDocument No: SOP-008\nHazard Level: LOW\n\n1. PURPOSE\nThis procedure describes the lockout/tagout and inspection steps required before\nperforming maintenance on the Feed Pump FP-08.\n\n2. REQUIRED PPE\nTechnicians must wear the following before beginning work: hard hat, hearing protection, arc-flash suit.\n\n3. PROCEDURE\n   Step 1: Verify guard and enclosure are reinstalled before re-energizing.\n   Step 2: Test emergency stop function.\n   Step 3: Record readings in the CMMS work order.\n   Step 4: Check lubrication levels and top off per spec sheet.\n   Step 5: Test emergency stop function.\n   Step 6: Record readings in the CMMS work order.\n   Step 7: Test emergency stop function.\n\n4. NOTES\nDeviations from this procedure must be logged and approved by the maintenance supervisor.",
+  "ground_truth": {
+    "equipment": "Feed Pump FP-08",
+    "hazard_level": "low",
+    "required_ppe": "hard hat, hearing protection, arc-flash suit",
+    "step_count": 7
+  }
+}

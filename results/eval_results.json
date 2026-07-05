@@ -1,0 +1,467 @@
+{
+  "n_docs": 49,
+  "classification_accuracy": 1.0,
+  "field_accuracy": {
+    "counterparty": 1.0,
+    "effective_date": 1.0,
+    "liability_cap_usd": 1.0,
+    "auto_renewal": 1.0,
+    "termination_notice_days": 1.0,
+    "facility": 0.9565217391304348,
+    "urgency": 0.6363636363636364,
+    "requested_action": 1.0,
+    "asset": 1.0,
+    "severity": 1.0,
+    "downtime_hours": 1.0,
+    "root_cause_identified": 1.0,
+    "equipment": 1.0,
+    "hazard_level": 1.0,
+    "required_ppe": 1.0,
+    "step_count": 1.0
+  },
+  "escalation_precision": 1.0,
+  "escalation_recall": 1.0,
+  "rows": [
+    {
+      "doc_id": "CONTRACT-001",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 0.8,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "CONTRACT-002",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 0.8,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "CONTRACT-003",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 0.6,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "CONTRACT-004",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 0.6,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "CONTRACT-005",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "CONTRACT-006",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 0.8,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "CONTRACT-007",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "CONTRACT-008",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "CONTRACT-009",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "CONTRACT-010",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 0.8,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "CONTRACT-011",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "CONTRACT-012",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "CONTRACT-013",
+      "true_type": "vendor_contract",
+      "pred_type": "vendor_contract",
+      "classified_correctly": true,
+      "extraction_confidence": 0.8,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "EMAIL-001",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "EMAIL-002",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "EMAIL-003",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "EMAIL-004",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "EMAIL-005",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "EMAIL-006",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "EMAIL-007",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "EMAIL-008",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "EMAIL-009",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "EMAIL-010",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "EMAIL-011",
+      "true_type": "service_email",
+      "pred_type": "service_email",
+      "classified_correctly": true,
+      "extraction_confidence": 0.83,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "INCIDENT-001",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "INCIDENT-002",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "INCIDENT-003",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "INCIDENT-004",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "INCIDENT-005",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "INCIDENT-006",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "INCIDENT-007",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "INCIDENT-008",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "INCIDENT-009",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "INCIDENT-010",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "INCIDENT-011",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "INCIDENT-012",
+      "true_type": "incident_report",
+      "pred_type": "incident_report",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "SOP-001",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "SOP-002",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "SOP-003",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "SOP-004",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "SOP-005",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "SOP-006",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "SOP-007",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "SOP-008",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "SOP-009",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "SOP-010",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "SOP-011",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": false,
+      "pred_escalate": false
+    },
+    {
+      "doc_id": "SOP-012",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    },
+    {
+      "doc_id": "SOP-013",
+      "true_type": "maintenance_sop",
+      "pred_type": "maintenance_sop",
+      "classified_correctly": true,
+      "extraction_confidence": 1.0,
+      "gt_escalate": true,
+      "pred_escalate": true
+    }
+  ]
+}

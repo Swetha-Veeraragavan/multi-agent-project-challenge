@@ -1,0 +1,126 @@
+{
+  "trace_id": "ce9bbe10",
+  "doc_id": "CONTRACT-007",
+  "doc_type_true": "vendor_contract",
+  "messages": [
+    {
+      "message_id": "f2022991",
+      "trace_id": "ce9bbe10",
+      "sender": "IntakeClassifierAgent",
+      "receiver": "ExtractionAgent",
+      "msg_type": "result",
+      "payload": {
+        "doc_id": "CONTRACT-007",
+        "doc_type": "vendor_contract"
+      },
+      "confidence": 1.0,
+      "timestamp": 1783190226.8433177
+    },
+    {
+      "message_id": "0b1f8ea4",
+      "trace_id": "ce9bbe10",
+      "sender": "ExtractionAgent",
+      "receiver": "tool:structured_extractor",
+      "msg_type": "tool_call",
+      "payload": {
+        "doc_id": "CONTRACT-007",
+        "doc_type": "vendor_contract"
+      },
+      "confidence": null,
+      "timestamp": 1783190226.8433177
+    },
+    {
+      "message_id": "0d62a5c7",
+      "trace_id": "ce9bbe10",
+      "sender": "ExtractionAgent",
+      "receiver": "RiskComplianceAgent",
+      "msg_type": "result",
+      "payload": {
+        "doc_id": "CONTRACT-007",
+        "doc_type": "vendor_contract",
+        "fields": {
+          "counterparty": "Meridian Turbine Services",
+          "effective_date": "2025-12-03",
+          "liability_cap_usd": 500000,
+          "auto_renewal": false,
+          "termination_notice_days": 60
+        }
+      },
+      "confidence": 1.0,
+      "timestamp": 1783190226.8433177
+    },
+    {
+      "message_id": "612b39aa",
+      "trace_id": "ce9bbe10",
+      "sender": "RiskComplianceAgent",
+      "receiver": "tool:policy_rules_db",
+      "msg_type": "tool_call",
+      "payload": {
+        "doc_id": "CONTRACT-007",
+        "doc_type": "vendor_contract"
+      },
+      "confidence": null,
+      "timestamp": 1783190226.8433177
+    },
+    {
+      "message_id": "acca3d2d",
+      "trace_id": "ce9bbe10",
+      "sender": "RiskComplianceAgent",
+      "receiver": "SummarizerQAAgent",
+      "msg_type": "approval",
+      "payload": {
+        "doc_id": "CONTRACT-007",
+        "doc_type": "vendor_contract",
+        "fields": {
+          "counterparty": "Meridian Turbine Services",
+          "effective_date": "2025-12-03",
+          "liability_cap_usd": 500000,
+          "auto_renewal": false,
+          "termination_notice_days": 60
+        },
+        "risk_score": 0.0
+      },
+      "confidence": 1.0,
+      "timestamp": 1783190226.8433177
+    },
+    {
+      "message_id": "2fc5328a",
+      "trace_id": "ce9bbe10",
+      "sender": "SummarizerQAAgent",
+      "receiver": "OUTPUT",
+      "msg_type": "result",
+      "payload": {
+        "doc_id": "CONTRACT-007",
+        "doc_type": "vendor_contract",
+        "fields": {
+          "counterparty": "Meridian Turbine Services",
+          "effective_date": "2025-12-03",
+          "liability_cap_usd": 500000,
+          "auto_renewal": false,
+          "termination_notice_days": 60
+        },
+        "summary": "SERVICE AND MAINTENANCE AGREEMENT\n\nThis Agreement is entered into as of 2025-12-03 between Meridian Industrial Operations\n(\"Client\") and Meridian Turbine Services (\"Vendor\"). SCOPE OF SERVICES\nVendor shall provide preventive and corrective maintenance services for rotating equipment\nat Client's designated facilities, including quarterly inspections and 24-hour emergency\ncall-out support.",
+        "review_status": "AUTO_APPROVED",
+        "question": "What is our liability exposure under this contract?",
+        "answer": "Liability is capped at $500,000 per twelve-month period per the extracted terms."
+      },
+      "confidence": null,
+      "timestamp": 1783190226.8433177
+    }
+  ],
+  "final_result": {
+    "doc_id": "CONTRACT-007",
+    "doc_type": "vendor_contract",
+    "fields": {
+      "counterparty": "Meridian Turbine Services",
+      "effective_date": "2025-12-03",
+      "liability_cap_usd": 500000,
+      "auto_renewal": false,
+      "termination_notice_days": 60
+    },
+    "summary": "SERVICE AND MAINTENANCE AGREEMENT\n\nThis Agreement is entered into as of 2025-12-03 between Meridian Industrial Operations\n(\"Client\") and Meridian Turbine Services (\"Vendor\"). SCOPE OF SERVICES\nVendor shall provide preventive and corrective maintenance services for rotating equipment\nat Client's designated facilities, including quarterly inspections and 24-hour emergency\ncall-out support.",
+    "review_status": "AUTO_APPROVED",
+    "question": "What is our liability exposure under this contract?",
+    "answer": "Liability is capped at $500,000 per twelve-month period per the extracted terms."
+  }
+}

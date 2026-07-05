@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-001",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #001\nFacility: Plant 4 - Odessa\nAsset: Cooling Tower Fan CTF-6\nSeverity: MEDIUM\n\nDESCRIPTION\nOn the shift of record, operators observed an unexpected trip on high bearing temperature\non the Cooling Tower Fan CTF-6. The unit was taken offline for inspection. Estimated downtime: 19.7 hours.\n\nROOT CAUSE\nRoot cause was determined to be bearing wear beyond tolerance.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Cooling Tower Fan CTF-6",
+    "facility": "Plant 4 - Odessa",
+    "severity": "medium",
+    "downtime_hours": 19.7,
+    "root_cause_identified": true
+  }
+}

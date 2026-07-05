@@ -1,0 +1,11 @@
+{
+  "doc_id": "SOP-013",
+  "doc_type_true": "maintenance_sop",
+  "text": "STANDARD OPERATING PROCEDURE\nEquipment: Feed Pump FP-08\nDocument No: SOP-013\nHazard Level: HIGH\n\n1. PURPOSE\nThis procedure describes the lockout/tagout and inspection steps required before\nperforming maintenance on the Feed Pump FP-08.\n\n2. REQUIRED PPE\nTechnicians must wear the following before beginning work: hard hat, hearing protection, arc-flash suit.\n\n3. PROCEDURE\n   Step 1: Isolate energy source and verify zero energy state.\n   Step 2: Notify shift supervisor before returning equipment to service.\n   Step 3: Isolate energy source and verify zero energy state.\n   Step 4: Isolate energy source and verify zero energy state.\n   Step 5: Test emergency stop function.\n   Step 6: Check lubrication levels and top off per spec sheet.\n   Step 7: Isolate energy source and verify zero energy state.\n   Step 8: Inspect bearing housing for abnormal vibration or heat discoloration.\n   Step 9: Check lubrication levels and top off per spec sheet.\n   Step 10: Inspect bearing housing for abnormal vibration or heat discoloration.\n\n4. NOTES\nDeviations from this procedure must be logged and approved by the maintenance supervisor.",
+  "ground_truth": {
+    "equipment": "Feed Pump FP-08",
+    "hazard_level": "high",
+    "required_ppe": "hard hat, hearing protection, arc-flash suit",
+    "step_count": 10
+  }
+}

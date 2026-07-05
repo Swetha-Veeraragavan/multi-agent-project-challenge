@@ -1,0 +1,11 @@
+{
+  "doc_id": "SOP-002",
+  "doc_type_true": "maintenance_sop",
+  "text": "STANDARD OPERATING PROCEDURE\nEquipment: Centrifugal Compressor C-22\nDocument No: SOP-002\nHazard Level: MEDIUM\n\n1. PURPOSE\nThis procedure describes the lockout/tagout and inspection steps required before\nperforming maintenance on the Centrifugal Compressor C-22.\n\n2. REQUIRED PPE\nTechnicians must wear the following before beginning work: respirator, chemical gloves, face shield.\n\n3. PROCEDURE\n   Step 1: Inspect bearing housing for abnormal vibration or heat discoloration.\n   Step 2: Torque check all fasteners to manufacturer spec.\n   Step 3: Torque check all fasteners to manufacturer spec.\n   Step 4: Test emergency stop function.\n   Step 5: Verify guard and enclosure are reinstalled before re-energizing.\n   Step 6: Isolate energy source and verify zero energy state.\n   Step 7: Inspect bearing housing for abnormal vibration or heat discoloration.\n   Step 8: Verify guard and enclosure are reinstalled before re-energizing.\n   Step 9: Notify shift supervisor before returning equipment to service.\n   Step 10: Inspect bearing housing for abnormal vibration or heat discoloration.\n\n4. NOTES\nDeviations from this procedure must be logged and approved by the maintenance supervisor.",
+  "ground_truth": {
+    "equipment": "Centrifugal Compressor C-22",
+    "hazard_level": "medium",
+    "required_ppe": "respirator, chemical gloves, face shield",
+    "step_count": 10
+  }
+}

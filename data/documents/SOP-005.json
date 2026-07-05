@@ -1,0 +1,11 @@
+{
+  "doc_id": "SOP-005",
+  "doc_type_true": "maintenance_sop",
+  "text": "STANDARD OPERATING PROCEDURE\nEquipment: Gas Turbine GT-114\nDocument No: SOP-005\nHazard Level: MEDIUM\n\n1. PURPOSE\nThis procedure describes the lockout/tagout and inspection steps required before\nperforming maintenance on the Gas Turbine GT-114.\n\n2. REQUIRED PPE\nTechnicians must wear the following before beginning work: respirator, chemical gloves, face shield.\n\n3. PROCEDURE\n   Step 1: Check lubrication levels and top off per spec sheet.\n   Step 2: Check lubrication levels and top off per spec sheet.\n   Step 3: Test emergency stop function.\n   Step 4: Check lubrication levels and top off per spec sheet.\n   Step 5: Verify guard and enclosure are reinstalled before re-energizing.\n   Step 6: Torque check all fasteners to manufacturer spec.\n\n4. NOTES\nDeviations from this procedure must be logged and approved by the maintenance supervisor.",
+  "ground_truth": {
+    "equipment": "Gas Turbine GT-114",
+    "hazard_level": "medium",
+    "required_ppe": "respirator, chemical gloves, face shield",
+    "step_count": 6
+  }
+}

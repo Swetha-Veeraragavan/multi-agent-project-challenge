@@ -1,0 +1,163 @@
+{
+  "trace_id": "36a732a9",
+  "doc_id": "CONTRACT-004",
+  "doc_type_true": "vendor_contract",
+  "messages": [
+    {
+      "message_id": "fba3ef55",
+      "trace_id": "36a732a9",
+      "sender": "IntakeClassifierAgent",
+      "receiver": "ExtractionAgent",
+      "msg_type": "result",
+      "payload": {
+        "doc_id": "CONTRACT-004",
+        "doc_type": "vendor_contract"
+      },
+      "confidence": 1.0,
+      "timestamp": 1783190226.87898
+    },
+    {
+      "message_id": "c7a9927d",
+      "trace_id": "36a732a9",
+      "sender": "ExtractionAgent",
+      "receiver": "tool:structured_extractor",
+      "msg_type": "tool_call",
+      "payload": {
+        "doc_id": "CONTRACT-004",
+        "doc_type": "vendor_contract"
+      },
+      "confidence": null,
+      "timestamp": 1783190226.882712
+    },
+    {
+      "message_id": "1f30467e",
+      "trace_id": "36a732a9",
+      "sender": "ExtractionAgent",
+      "receiver": "RiskComplianceAgent",
+      "msg_type": "result",
+      "payload": {
+        "doc_id": "CONTRACT-004",
+        "doc_type": "vendor_contract",
+        "fields": {
+          "counterparty": "Aravalle Field Ops",
+          "effective_date": "2025-06-09",
+          "liability_cap_usd": null,
+          "auto_renewal": true,
+          "termination_notice_days": null
+        }
+      },
+      "confidence": 0.6,
+      "timestamp": 1783190226.882712
+    },
+    {
+      "message_id": "606bf8d0",
+      "trace_id": "36a732a9",
+      "sender": "RiskComplianceAgent",
+      "receiver": "tool:policy_rules_db",
+      "msg_type": "tool_call",
+      "payload": {
+        "doc_id": "CONTRACT-004",
+        "doc_type": "vendor_contract"
+      },
+      "confidence": null,
+      "timestamp": 1783190226.882712
+    },
+    {
+      "message_id": "5d9b4976",
+      "trace_id": "36a732a9",
+      "sender": "RiskComplianceAgent",
+      "receiver": "HumanReviewCheckpoint",
+      "msg_type": "escalation",
+      "payload": {
+        "doc_id": "CONTRACT-004",
+        "doc_type": "vendor_contract",
+        "fields": {
+          "counterparty": "Aravalle Field Ops",
+          "effective_date": "2025-06-09",
+          "liability_cap_usd": null,
+          "auto_renewal": true,
+          "termination_notice_days": null
+        },
+        "flags": [
+          "no_liability_cap",
+          "short_or_missing_notice_window",
+          "auto_renewal_with_no_exit_clause"
+        ],
+        "risk_score": 0.6,
+        "recommended_action": "route_to_legal_review"
+      },
+      "confidence": 0.6,
+      "timestamp": 1783190226.882712
+    },
+    {
+      "message_id": "0122462a",
+      "trace_id": "36a732a9",
+      "sender": "HumanReviewCheckpoint",
+      "receiver": "SummarizerQAAgent",
+      "msg_type": "rejection",
+      "payload": {
+        "doc_id": "CONTRACT-004",
+        "doc_type": "vendor_contract",
+        "fields": {
+          "counterparty": "Aravalle Field Ops",
+          "effective_date": "2025-06-09",
+          "liability_cap_usd": null,
+          "auto_renewal": true,
+          "termination_notice_days": null
+        },
+        "flags": [
+          "no_liability_cap",
+          "short_or_missing_notice_window",
+          "auto_renewal_with_no_exit_clause"
+        ],
+        "risk_score": 0.6,
+        "recommended_action": "route_to_legal_review",
+        "human_decision": "REJECT",
+        "human_note": "Contract needs a liability cap and a defined notice period before it can be filed. Sent back to vendor for redline."
+      },
+      "confidence": null,
+      "timestamp": 1783190226.882712
+    },
+    {
+      "message_id": "c16b21af",
+      "trace_id": "36a732a9",
+      "sender": "SummarizerQAAgent",
+      "receiver": "OUTPUT",
+      "msg_type": "result",
+      "payload": {
+        "doc_id": "CONTRACT-004",
+        "doc_type": "vendor_contract",
+        "fields": {
+          "counterparty": "Aravalle Field Ops",
+          "effective_date": "2025-06-09",
+          "liability_cap_usd": null,
+          "auto_renewal": true,
+          "termination_notice_days": null
+        },
+        "summary": "SERVICE AND MAINTENANCE AGREEMENT\n\nThis Agreement is entered into as of 2025-06-09 between Meridian Industrial Operations\n(\"Client\") and Aravalle Field Ops (\"Vendor\"). SCOPE OF SERVICES\nVendor shall provide preventive and corrective maintenance services for rotating equipment\nat Client's designated facilities, including quarterly inspections and 24-hour emergency\ncall-out support.",
+        "review_status": "REJECT",
+        "review_note": "Contract needs a liability cap and a defined notice period before it can be filed. Sent back to vendor for redline.",
+        "question": "What is our liability exposure under this contract?",
+        "answer": "No cap is specified in the extracted terms -- exposure is uncapped, which is why this was flagged: Contract needs a liability cap and a defined notice period before it can be filed. Sent back to vendor for redline."
+      },
+      "confidence": null,
+      "timestamp": 1783190226.887886
+    }
+  ],
+  "final_result": {
+    "doc_id": "CONTRACT-004",
+    "doc_type": "vendor_contract",
+    "fields": {
+      "counterparty": "Aravalle Field Ops",
+      "effective_date": "2025-06-09",
+      "liability_cap_usd": null,
+      "auto_renewal": true,
+      "termination_notice_days": null
+    },
+    "summary": "SERVICE AND MAINTENANCE AGREEMENT\n\nThis Agreement is entered into as of 2025-06-09 between Meridian Industrial Operations\n(\"Client\") and Aravalle Field Ops (\"Vendor\"). SCOPE OF SERVICES\nVendor shall provide preventive and corrective maintenance services for rotating equipment\nat Client's designated facilities, including quarterly inspections and 24-hour emergency\ncall-out support.",
+    "review_status": "REJECT",
+    "review_note": "Contract needs a liability cap and a defined notice period before it can be filed. Sent back to vendor for redline.",
+    "question": "What is our liability exposure under this contract?",
+    "answer": "No cap is specified in the extracted terms -- exposure is uncapped, which is why this was flagged: Contract needs a liability cap and a defined notice period before it can be filed. Sent back to vendor for redline."
+  }
+}

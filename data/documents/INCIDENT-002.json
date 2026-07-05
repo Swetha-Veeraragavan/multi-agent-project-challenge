@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-002",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #002\nFacility: Plant 4 - Odessa\nAsset: Cooling Tower Fan CTF-6\nSeverity: CRITICAL\n\nDESCRIPTION\nOn the shift of record, operators observed oil leakage at the shaft seal\non the Cooling Tower Fan CTF-6. The unit was taken offline for inspection. Estimated downtime: 31.7 hours.\n\nROOT CAUSE\nRoot cause was determined to be seal degradation from age.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Cooling Tower Fan CTF-6",
+    "facility": "Plant 4 - Odessa",
+    "severity": "critical",
+    "downtime_hours": 31.7,
+    "root_cause_identified": true
+  }
+}

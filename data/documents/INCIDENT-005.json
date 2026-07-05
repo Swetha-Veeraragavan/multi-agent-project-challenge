@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-005",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #005\nFacility: Plant 2 - Gary\nAsset: Cooling Tower Fan CTF-6\nSeverity: HIGH\n\nDESCRIPTION\nOn the shift of record, operators observed a sharp rise in vibration amplitude\non the Cooling Tower Fan CTF-6. The unit was taken offline for inspection. Estimated downtime: 6.8 hours.\n\nROOT CAUSE\nRoot cause was determined to be a failed lubrication pump.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Cooling Tower Fan CTF-6",
+    "facility": "Plant 2 - Gary",
+    "severity": "high",
+    "downtime_hours": 6.8,
+    "root_cause_identified": true
+  }
+}

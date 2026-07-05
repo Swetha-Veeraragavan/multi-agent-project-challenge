@@ -1,0 +1,11 @@
+{
+  "doc_id": "SOP-011",
+  "doc_type_true": "maintenance_sop",
+  "text": "STANDARD OPERATING PROCEDURE\nEquipment: Centrifugal Compressor C-22\nDocument No: SOP-011\nHazard Level: MEDIUM\n\n1. PURPOSE\nThis procedure describes the lockout/tagout and inspection steps required before\nperforming maintenance on the Centrifugal Compressor C-22.\n\n2. REQUIRED PPE\nTechnicians must wear the following before beginning work: hard hat, hearing protection, arc-flash suit.\n\n3. PROCEDURE\n   Step 1: Inspect bearing housing for abnormal vibration or heat discoloration.\n   Step 2: Isolate energy source and verify zero energy state.\n   Step 3: Isolate energy source and verify zero energy state.\n   Step 4: Inspect bearing housing for abnormal vibration or heat discoloration.\n   Step 5: Record readings in the CMMS work order.\n   Step 6: Check lubrication levels and top off per spec sheet.\n   Step 7: Torque check all fasteners to manufacturer spec.\n   Step 8: Test emergency stop function.\n   Step 9: Test emergency stop function.\n   Step 10: Record readings in the CMMS work order.\n\n4. NOTES\nDeviations from this procedure must be logged and approved by the maintenance supervisor.",
+  "ground_truth": {
+    "equipment": "Centrifugal Compressor C-22",
+    "hazard_level": "medium",
+    "required_ppe": "hard hat, hearing protection, arc-flash suit",
+    "step_count": 10
+  }
+}

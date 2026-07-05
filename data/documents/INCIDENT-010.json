@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-010",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #010\nFacility: Plant 7 - Baton Rouge\nAsset: Generator GEN-3\nSeverity: LOW\n\nDESCRIPTION\nOn the shift of record, operators observed oil leakage at the shaft seal\non the Generator GEN-3. The unit was taken offline for inspection. Estimated downtime: 0.7 hours.\n\nROOT CAUSE\nRoot cause was determined to be a failed lubrication pump.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Generator GEN-3",
+    "facility": "Plant 7 - Baton Rouge",
+    "severity": "low",
+    "downtime_hours": 0.7,
+    "root_cause_identified": true
+  }
+}

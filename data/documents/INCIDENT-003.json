@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-003",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #003\nFacility: Plant 7 - Baton Rouge\nAsset: Centrifugal Compressor C-22\nSeverity: MEDIUM\n\nDESCRIPTION\nOn the shift of record, operators observed oil leakage at the shaft seal\non the Centrifugal Compressor C-22. The unit was taken offline for inspection. Estimated downtime: 13.1 hours.\n\nROOT CAUSE\nRoot cause investigation is still open pending vendor teardown report.\n\nCORRECTIVE ACTION\nInterim monitoring increased; formal RCA to follow within 10 business days.",
+  "ground_truth": {
+    "asset": "Centrifugal Compressor C-22",
+    "facility": "Plant 7 - Baton Rouge",
+    "severity": "medium",
+    "downtime_hours": 13.1,
+    "root_cause_identified": false
+  }
+}

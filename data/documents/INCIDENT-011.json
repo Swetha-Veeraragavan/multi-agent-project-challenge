@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-011",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #011\nFacility: Plant 1 - Tulsa\nAsset: Generator GEN-3\nSeverity: LOW\n\nDESCRIPTION\nOn the shift of record, operators observed an unexpected trip on high bearing temperature\non the Generator GEN-3. The unit was taken offline for inspection. Estimated downtime: 5.8 hours.\n\nROOT CAUSE\nRoot cause was determined to be bearing wear beyond tolerance.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Generator GEN-3",
+    "facility": "Plant 1 - Tulsa",
+    "severity": "low",
+    "downtime_hours": 5.8,
+    "root_cause_identified": true
+  }
+}

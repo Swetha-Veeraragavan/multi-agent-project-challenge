@@ -1,0 +1,12 @@
+{
+  "doc_id": "INCIDENT-004",
+  "doc_type_true": "incident_report",
+  "text": "INCIDENT REPORT #004\nFacility: Plant 7 - Baton Rouge\nAsset: Generator GEN-3\nSeverity: LOW\n\nDESCRIPTION\nOn the shift of record, operators observed a sharp rise in vibration amplitude\non the Generator GEN-3. The unit was taken offline for inspection. Estimated downtime: 0.9 hours.\n\nROOT CAUSE\nRoot cause was determined to be bearing wear beyond tolerance.\n\nCORRECTIVE ACTION\nReplacement parts ordered and repair scheduled.",
+  "ground_truth": {
+    "asset": "Generator GEN-3",
+    "facility": "Plant 7 - Baton Rouge",
+    "severity": "low",
+    "downtime_hours": 0.9,
+    "root_cause_identified": true
+  }
+}
