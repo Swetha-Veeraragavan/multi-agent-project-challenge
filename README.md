@@ -1,4 +1,4 @@
-# DocuFlow — Multi-Agent Enterprise Document Intelligence
+# Document Flow - Multi-Agent Enterprise Document Intelligence
 
 **AI/ML Hiring Challenge — Track A (Agentic/Multi-Agent AI) × Scenario S2 (Gen AI for Enterprise Documents)**
 
@@ -144,7 +144,3 @@ discussed at length in the write-up along with a genuine failure mode we found i
 `urgency` field. See `write-up/writeup.doc`, Section 3, and `results/eval_results.json` for
 the row-level data.
 
-
-## Repo details
-
-Link: `[ADD YOUR RECORDED LOOM/YOUTUBE LINK HERE]`
