@@ -1,0 +1,5 @@
+# Python 3.12
+langgraph==1.2.7
+langchain-core==1.4.8
+pydantic==2.13.4
+openai==2.44.0   # only imported if OPENAI_API_KEY is set (see src/llm_client.py)
