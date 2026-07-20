@@ -7,7 +7,8 @@ requirement
 
 from __future__ import annotations
 import uuid
-from typing import TypedDict, Optional, Any
+# from typing import TypedDict, Optional, Any
+from typing import TypedDict, Optional
 
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
@@ -28,7 +29,7 @@ class PipelineState(TypedDict, total=False):
     upstream_for_summarizer: Optional[dict]
     final_result: Optional[dict]
     messages: list
-    reviewer_fn: Any
+    # reviewer_fn: Any
 
 
 def _log(state: PipelineState, msg: AgentMessage) -> None:
@@ -64,13 +65,13 @@ def node_risk(state: PipelineState) -> PipelineState:
     return state
 
 
-def node_human_review(state: PipelineState) -> PipelineState:
-    escalation_msg = AgentMessage.model_validate(state["escalation"])
-    reviewer_fn = state.get("reviewer_fn") or human_checkpoint.default_reviewer_fn
-    result_msg = human_checkpoint.run(state["trace_id"], escalation_msg, reviewer_fn=reviewer_fn)
-    _log(state, result_msg)
-    state["upstream_for_summarizer"] = result_msg.model_dump(mode="json")
-    return state
+# def node_human_review(state: PipelineState) -> PipelineState:
+#     escalation_msg = AgentMessage.model_validate(state["escalation"])
+#     reviewer_fn = state.get("reviewer_fn") or human_checkpoint.default_reviewer_fn
+#     result_msg = human_checkpoint.run(state["trace_id"], escalation_msg, reviewer_fn=reviewer_fn)
+#     _log(state, result_msg)
+#     state["upstream_for_summarizer"] = result_msg.model_dump(mode="json")
+#     return state
 
 
 def node_summarize(state: PipelineState) -> PipelineState:
@@ -85,7 +86,15 @@ def route_after_risk(state: PipelineState) -> str:
     return "human_review" if state.get("escalation") else "summarize"
 
 
-def build_graph():
+def build_graph(reviewer_fn=None):
+    resolved_reviewer_fn = reviewer_fn or human_checkpoint.default_reviewer_fn
+    def node_human_review(state: PipelineState) -> PipelineState:
+        escalation_msg = AgentMessage.model_validate(state["escalation"])
+        result_msg = human_checkpoint.run(state["trace_id"], escalation_msg, reviewer_fn=resolved_reviewer_fn)
+        _log(state, result_msg)
+        state["upstream_for_summarizer"] = result_msg.model_dump(mode="json")
+        return state
+    
     graph = StateGraph(PipelineState)
     graph.add_node("classify", node_classify)
     graph.add_node("extract", node_extract)
@@ -108,14 +117,13 @@ def build_graph():
 
 def run_pipeline(doc_id: str, text: str, question: str | None = None, reviewer_fn=None) -> PipelineState:
     """Runs the pipeline end to end, auto-resolving any interrupt via reviewer_fn."""
-    graph = build_graph()
+    graph = build_graph(reviewer_fn=reviewer_fn)
     trace_id = str(uuid.uuid4())[:8]
     initial_state: PipelineState = {
         "trace_id": trace_id,
         "doc_id": doc_id,
         "text": text,
         "question": question,
-        "reviewer_fn": reviewer_fn,
         "messages": [],
     }
     config = {"configurable": {"thread_id": trace_id}}
